@@ -31,4 +31,3 @@ a moins que vous vous sentiez assez a l'aise avec les merge pour ajouter les mod
 #### 1.2 Gestion et rôles
 Le/Les maintener du repo principal sont garant du bon fonctionnement des ajouts au repo principal. Il/Ils doivent absolument tester toutes les modifications qui veulent être ajoutées au repo principal.
 Le rôle du chef de projet est (A définir)
-En cas de pro
