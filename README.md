@@ -1,9 +1,9 @@
 # PRO : Charte
 ---
   1. *Github, gestion et rôles*
-  3. *Tests*
-  2. *Convention de code*
-  3. *Deroulement des séances*
+  2. *Tests*
+  3. *Convention de code*
+  4. *Deroulement des séances*
 ---
 ### 1 : Github et gestion
 #### 1.1 Workflow Git/Github
@@ -31,3 +31,55 @@ a moins que vous vous sentiez assez a l'aise avec les merge pour ajouter les mod
 #### 1.2 Gestion et rôles
 Le/Les maintener du repo principal sont garant du bon fonctionnement des ajouts au repo principal. Il/Ils doivent absolument tester toutes les modifications qui veulent être ajoutées au repo principal.
 Le rôle du chef de projet est (A définir)
+Tous les membres du projet s'engage à tenir leur journal de travail à jour, et à communiquer leurs problèmes le plus rapidement possible, afin de s'assurer que tout le monde soit au courant des problèmes rencontrés et puisse réfléchir à comment les résoudres. Les problèmes rencontrés sont expliqués au travers d'issues sur github. Les membres consultent les issues lors du début de leur séance de travail, et aussi souvent que nécéssaire, afin de se tenir a jour sur l'avancement du projet et des différents membres du projet.
+
+### 2 Tests
+Les membres commencent par créer des tests avant d'implémenter leur fonctionnalité. Les tests sont situés dans un dossier différent du dossier contenant les sources du programme. Les tests sont effectués majoritairement a l'aide d'assert. Les tests utilisent JUnit. Un exemple du fonctionnement des tests peut être trouvé dans projet "Lab00" de RES.
+
+### 3 Convention de code
+La convention suivante est basée sur la convention officielle d'Oracle. Cette convention peut être trouvée ici:
+https://www.oracle.com/technetwork/java/codeconvtoc-136057.html
+#### Commentaire :
+Le projet utilisera une convention javadoc pour les fonctions et les classes :
+**Classe :**
+```
+/**
+ * <b>But : but de la classe</b>
+ * <p>
+ * Description : Petite Description de la classe
+ * </p>
+ *
+ * @author Votre nom
+ * @version 1.0
+ */
+```
+**Constructeur :**
+```
+/**
+* Constructeur NomDeLaClasse.
+* <p>
+* Description : Description de ce que fais le constructeur (Initialisaion, fonctions...)
+* </p>
+*
+* @param {Type} NomParam - Description Param.
+*
+*(Eventuellement si nécéssaire)
+* @throws NomException Description du cas ou nécéssaire
+*/
+```
+**Fonctions :**
+```
+/**
+ * But : But de la fonction
+ * <p>
+ * Description : Description de la fonction
+ * </p>
+ *
+ * @param {Type} NomParam - Description Param.
+ *
+ * @return {Type} Description return.
+ *
+ *(Eventuellement si nécéssaire)
+ * @throws NomException Description du cas ou nécéssaire
+ */
+```
