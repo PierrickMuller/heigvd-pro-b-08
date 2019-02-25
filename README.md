@@ -31,15 +31,15 @@ Le/Les maintener du repo principal sont garant du bon fonctionnement des ajouts 
 Le rôle du chef de projet est (A définir)
 Tous les membres du projet s'engage à tenir leur journal de travail à jour, et à communiquer leurs problèmes le plus rapidement possible, afin de s'assurer que tout le monde soit au courant des problèmes rencontrés et puisse réfléchir à comment les résoudres. Les problèmes rencontrés sont expliqués au travers d'issues sur github. Les membres consultent les issues lors du début de leur séance de travail, et aussi souvent que nécéssaire, afin de se tenir a jour sur l'avancement du projet et des différents membres du projet.
 
-### 2 Tests
+### 2 : Tests
 Les membres commencent par créer des tests avant d'implémenter leur fonctionnalité. Les tests sont situés dans un dossier différent du dossier contenant les sources du programme. Les tests sont effectués majoritairement a l'aide d'assert. Les tests utilisent JUnit. Un exemple du fonctionnement des tests peut être trouvé dans projet "Lab00" de RES.
 
-### 3 Convention de code
+### 3 : Convention de code
 La convention suivante est basée sur la convention officielle d'Oracle. Cette convention peut être trouvée ici:
 https://www.oracle.com/technetwork/java/codeconvtoc-136057.html
 Elle est aussi fortement inspiré de la convention suivante :
 http://www2.hawaii.edu/~tp_200/ics111/material/codingStandards.html
-#### 2.1 Commentaire
+#### 3.1 Commentaire
 Chaque fichier contient une entete dont voici le template :
 ```
 /* ---------------------------
@@ -106,7 +106,7 @@ Le projet utilisera une convention javadoc pour les fonctions et les classes :
 ```
 Si les variables ne sont pas explicites, elle doivent être expliquées en une ligne à l'aide d'un commentaire `//`
 
-#### 2.2 Convention de nommage
+#### 3.2 Convention de nommage
 Les noms des classes, des variables et des fonctions doivent avoir du sens, être cohérents  et suivre la convention suivante:
 - N'utilisez pas de noms trop longs.
 - Les variables et les fonctions utilise la pratique *Lower camel case*. Ainsi, chaque variable est une suite sans espace de mot avec chacune des première lettres des mots en majuscule sauf la première lettre de la variable.
@@ -115,3 +115,14 @@ Les noms des classes, des variables et des fonctions doivent avoir du sens, êtr
 `public class UpperCamelCase`
 - Les constantes sont écrite en majuscule et chaque mot les composant sont séparé par un caractère "_"
 `final int TAILLE_DE_MA_CHAUSSURE = 42;`
+
+### 4 : Deroulement des séances
+Les membres du projet se réunissent lors des périodes de projets pour discuter de leur avancées respectives. De plus, les choix d'implémentations sont décidé en groupe, lors de discussions.
+
+Si les membres du groupes n'arrivent pas s'accorder sur un choix d'implémentation ou sur une question concernant le projet, un vote à main levé à lieu. Lors d'une egalité pedant le vote, le choix ou la question est rediscuté.
+
+Si les membres du projet n'arrivent pas à se mettre d'acord, c'est le chef de projet qui tranche. Si le sujet est jugé trop sensible, le choix final est tiré à pile ou face.
+
+Lors des discussions, les membres du projet respectent les autres et ne se coupent pas la parole. Tous les points de vues sont les bienvenues, et toutes les idées sont bénéfiques pour le projet. Les membres sont garant du bon déroulement de ces discussions, et s'assure que tous le monde puisse parler.
+
+En cas de besoin, un système de main levé pour les prises de parole peut être mis en place et géré par un ou plusieurs des membres du projet (Le chef de projet, par exemple.)
