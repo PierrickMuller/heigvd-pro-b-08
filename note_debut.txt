@@ -1,0 +1,13 @@
+Fonctionalité live
+
+- Statistique partagées entre plusieurs personnes avec filtres pour gérer ça.
+- Conseils distribués entre 
+
+Avoir les deux. Certaines fonctions pour un serveur.
+
+Mix local + serveur. 
+
+bastien gardel
+
+
+
