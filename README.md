@@ -37,7 +37,30 @@ Les membres commencent par créer des tests avant d'implémenter leur fonctionna
 ### 3 Convention de code
 La convention suivante est basée sur la convention officielle d'Oracle. Cette convention peut être trouvée ici:
 https://www.oracle.com/technetwork/java/codeconvtoc-136057.html
-#### Commentaire :
+Elle est aussi fortement inspiré de la convention suivante :
+http://www2.hawaii.edu/~tp_200/ics111/material/codingStandards.html
+#### 2.1 Commentaire
+Chaque fichier contient une entete dont voici le template :
+```
+/* ---------------------------
+   Projet : NomDuProjet
+   Package : NomDuPackage
+   Fichier : NomDufichier.java
+   Auteur(s) : Membre(s) du groupe crateur du fichier.
+   Date : Date de cration du fichier
+
+   But : But du fichier
+
+   Remarque(s) : Remarque sur le fichier (Trucs à savoir, etc...)
+
+   Compilateur : version du compilateur
+
+   Auteur(s) modifications : Nom de la personne qui à effectué la dernière modifications
+   Date modifications : Date de la dernière modification.
+
+   --------------------------- */
+```
+
 Le projet utilisera une convention javadoc pour les fonctions et les classes :
 **Classe :**
 ```
@@ -81,3 +104,14 @@ Le projet utilisera une convention javadoc pour les fonctions et les classes :
  * @throws NomException Description du cas ou nécéssaire
  */
 ```
+Si les variables ne sont pas explicites, elle doivent être expliquées en une ligne à l'aide d'un commentaire `//`
+
+#### 2.2 Convention de nommage
+Les noms des classes, des variables et des fonctions doivent avoir du sens, être cohérents  et suivre la convention suivante:
+- N'utilisez pas de noms trop longs.
+- Les variables et les fonctions utilise la pratique *Lower camel case*. Ainsi, chaque variable est une suite sans espace de mot avec chacune des première lettres des mots en majuscule sauf la première lettre de la variable.
+`int lowerCamelCase;`
+- Les noms des classes utilisent la pratique *Upper camel case*. C'est la même chose que *Lower camel case*, sauf que la première classe est aussi en majuscule.
+`public class UpperCamelCase`
+- Les constantes sont écrite en majuscule et chaque mot les composant sont séparé par un caractère "_"
+`final int TAILLE_DE_MA_CHAUSSURE = 42;`
