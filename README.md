@@ -116,13 +116,13 @@ Les noms des classes, des variables et des fonctions doivent avoir du sens, êtr
 - Les constantes sont écrite en majuscule et chaque mot les composant sont séparé par un caractère "_"
 `final int TAILLE_DE_MA_CHAUSSURE = 42;`
 
-### 4 : Deroulement des séances
-Les membres du projet se réunissent lors des périodes de projets pour discuter de leur avancées respectives. De plus, les choix d'implémentations sont décidé en groupe, lors de discussions.
+### 4 : Déroulement des séances
+Les membres du projet se réunissent lors des périodes de projet pour discuter de leur avancée respective. De plus, les choix d'implémentation sont décidés en groupe, lors de discussions.
 
-Si les membres du groupes n'arrivent pas s'accorder sur un choix d'implémentation ou sur une question concernant le projet, un vote à main levé à lieu. Lors d'une egalité pedant le vote, le choix ou la question est rediscuté.
+Si les membres du groupe n'arrivent pas s'accorder sur un choix d'implémentation ou sur une question concernant le projet, un vote à main levée à lieu. En cas d'égalité pendant le vote, le choix ou la question est rediscuté.
 
-Si les membres du projet n'arrivent pas à se mettre d'acord, c'est le chef de projet qui tranche. Si le sujet est jugé trop sensible, le choix final est tiré à pile ou face.
+Si les membres du projet n'arrivent pas à se mettre d'accord, c'est le chef de projet qui tranche. Si le sujet est jugé trop sensible, le choix final est tiré à pile ou face.
 
-Lors des discussions, les membres du projet respectent les autres et ne se coupent pas la parole. Tous les points de vues sont les bienvenues, et toutes les idées sont bénéfiques pour le projet. Les membres sont garant du bon déroulement de ces discussions, et s'assure que tous le monde puisse parler.
+Lors des discussions, les membres du projet respectent les autres et ne se coupent pas la parole. Tous les points de vues sont les bienvenus, et toutes les idées sont bénéfiques pour le projet. Les membres sont garants du bon déroulement de ces discussions, et s'assurent que tout le monde puisse parler.
 
-En cas de besoin, un système de main levé pour les prises de parole peut être mis en place et géré par un ou plusieurs des membres du projet (Le chef de projet, par exemple.)
+En cas de besoin, un système de main levée pour les prises de parole peut être mis en place et géré par un ou plusieurs des membres du projet (Le chef de projet, par exemple.)
