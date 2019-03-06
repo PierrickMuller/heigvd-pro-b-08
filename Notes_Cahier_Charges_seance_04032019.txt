@@ -1,0 +1,22 @@
+Retour cahier des charges 04.03.2019:
+
+Besoins fonctionnels : 
+Ajouter des Possibilitées / Fonctions
+Partie master obligatoire / "Nice to have"
+séparer les deux dans les besoins fonctionnels
+ajout statistiques globales dans les "Master - obligatoire"
+Nice to have ajouter conseils basé sur statistique globale et groupe social (Etudiant-salarié, Age, pays).
+
+Premiere phrase : "Nous devons réaliser un projet", pas top, a modifier, on a pas l'air motivé
+
+Objectifs :  Il suffit d'un navigateur pour utiliser l'application. 
+
+Périmetre : Pas d'utilisation hors-ligne, ni application mobile. 
+Dans les nice to have, gestion responsive (Utilisation sur differents modules) 
+
+Rendre le texte plus enthousiaste.
+
+Revenu futurs temporaires
+
+
+
