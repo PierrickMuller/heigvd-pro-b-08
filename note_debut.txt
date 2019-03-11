@@ -1,4 +1,4 @@
-Fonctionalité live
+﻿Fonctionalité live
 
 - Statistique partagées entre plusieurs personnes avec filtres pour gérer ça.
 - Conseils distribués entre 
@@ -9,5 +9,12 @@ Mix local + serveur.
 
 bastien gardel
 
+tests : penser à d'autre tests que les tests unitaires, tests d'intégrations, tests des fonctionalités complet (end-to-end). Reflechir aux tests d'intégration.
 
+Pour le mode d'emploi, préciser exactement les fonctionalités /l'ensemble des trucs.
+
+Planning : Detailler les catégories, avoir un niveau de détail en plus, exemple "Mise en place des fonctionalitées" decoupé en composant (Distribuer le developpement afin de pouvoir travailler plus en parrallele sans dépendance). On doit ajouter des dépendances car on doit avoir une certaine serialisation, avec peu de dependance pour pouvoir mettre en place les trucs.
+
+Doit être possible de pouvoir déduire comment on va séparer le travail.
+Définir des API pour pouvoir travailler de manière indépendante.
 
