@@ -1,0 +1,12 @@
+Modèle de transaction -> sous catégore (delete set default ) ??????????????
+
+Modèle de transaction -> Type transaction (delete RESTRICT) ???????
+
+Modèle de transaction -> Utilisateur (delete CASCADE) problème ?
+
+Modèle de transaction -> Récurence (delete SET NULL) ?
+
+Transaction -> modele_transaction (delete no action)
+
+Sous_categore -> catégore (delete SET default) ??????
+
