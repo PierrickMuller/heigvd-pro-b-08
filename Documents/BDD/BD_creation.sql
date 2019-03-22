@@ -27,7 +27,7 @@ SET default_with_oids = false;
 --
 
 CREATE TABLE public."Categorie" (
-    categorie_id integer NOT NULL,
+    categorie_id SERIAL NOT NULL,
     nom character varying(20) NOT NULL,
     couleur smallint
 );
@@ -41,7 +41,7 @@ ALTER TABLE public."Categorie" OWNER TO postgres;
 --
 
 CREATE TABLE public."Limite" (
-    limite_id integer NOT NULL,
+    limite_id SERIAL NOT NULL,
     date date NOT NULL,
     valeur integer NOT NULL,
     utilisateur_id integer NOT NULL,
@@ -58,7 +58,7 @@ ALTER TABLE public."Limite" OWNER TO postgres;
 --
 
 CREATE TABLE public."Modele_transaction" (
-    modele_transaction_id integer NOT NULL,
+    modele_transaction_id SERIAL NOT NULL,
     valeur money NOT NULL,
     date date NOT NULL,
     note text,
@@ -77,8 +77,8 @@ ALTER TABLE public."Modele_transaction" OWNER TO postgres;
 --
 
 CREATE TABLE public."Notification" (
-    notification_id integer NOT NULL,
-    titre character varying(30)[] NOT NULL,
+    notification_id SERIAL NOT NULL,
+    titre character varying(30) NOT NULL,
     message character varying,
     utilisateur_id integer NOT NULL
 );
@@ -92,7 +92,7 @@ ALTER TABLE public."Notification" OWNER TO postgres;
 --
 
 CREATE TABLE public."Options" (
-    options_id integer NOT NULL,
+    options_id SERIAL NOT NULL,
     rappel_email boolean NOT NULL
 );
 
@@ -105,8 +105,8 @@ ALTER TABLE public."Options" OWNER TO postgres;
 --
 
 CREATE TABLE public."Pays" (
-    pays_id integer NOT NULL,
-    nom character varying(30)[] NOT NULL
+    pays_id SERIAL NOT NULL,
+    nom character varying(30) NOT NULL
 );
 
 
@@ -118,7 +118,7 @@ ALTER TABLE public."Pays" OWNER TO postgres;
 --
 
 CREATE TABLE public."Recurence" (
-    recurence_id integer NOT NULL,
+    recurence_id SERIAL NOT NULL,
     "Periodicite" character varying(20) NOT NULL
 );
 
@@ -127,17 +127,17 @@ ALTER TABLE public."Recurence" OWNER TO postgres;
 
 --
 -- TOC entry 206 (class 1259 OID 16944)
--- Name: Sous-categorie; Type: TABLE; Schema: public; Owner: postgres
+-- Name: Sous_categorie; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public."Sous-categorie" (
-    "sous-categorie_id" integer NOT NULL,
+CREATE TABLE public."Sous_categorie" (
+    sous_categorie_id SERIAL NOT NULL,
     nom character varying(20) NOT NULL,
     categorie_id integer NOT NULL
 );
 
 
-ALTER TABLE public."Sous-categorie" OWNER TO postgres;
+ALTER TABLE public."Sous_categorie" OWNER TO postgres;
 
 --
 -- TOC entry 199 (class 1259 OID 16899)
@@ -145,8 +145,8 @@ ALTER TABLE public."Sous-categorie" OWNER TO postgres;
 --
 
 CREATE TABLE public."Statut" (
-    statut_id integer NOT NULL,
-    nom character varying(30)[] NOT NULL
+    statut_id SERIAL NOT NULL,
+    nom character varying(30) NOT NULL
 );
 
 
@@ -158,7 +158,7 @@ ALTER TABLE public."Statut" OWNER TO postgres;
 --
 
 CREATE TABLE public."Transaction" (
-    transaction_id integer NOT NULL,
+    transaction_id SERIAL NOT NULL,
     valeur money NOT NULL,
     date date NOT NULL,
     modele_transaction_id integer NOT NULL
@@ -173,7 +173,7 @@ ALTER TABLE public."Transaction" OWNER TO postgres;
 --
 
 CREATE TABLE public."Type_transaction" (
-    type_transaction_id integer NOT NULL,
+    type_transaction_id SERIAL NOT NULL,
     type character varying(20) NOT NULL
 );
 
@@ -186,12 +186,12 @@ ALTER TABLE public."Type_transaction" OWNER TO postgres;
 --
 
 CREATE TABLE public."Utilisateur" (
-    utilisateur_id integer NOT NULL,
-    prenom character varying(30)[] NOT NULL,
-    nom character varying(30)[] NOT NULL,
-    email character varying(50)[] NOT NULL,
-    pseudo character varying(20)[] NOT NULL,
-    mdp character varying(60)[] NOT NULL,
+    utilisateur_id SERIAL NOT NULL,
+    prenom character varying(30) NOT NULL,
+    nom character varying(30) NOT NULL,
+    email character varying(50) NOT NULL,
+    pseudo character varying(20) NOT NULL,
+    mdp character varying(60) NOT NULL,
     genre boolean,
     anniversaire date NOT NULL,
     cree_a timestamp without time zone DEFAULT now(),
@@ -210,8 +210,8 @@ ALTER TABLE public."Utilisateur" OWNER TO postgres;
 --
 
 CREATE TABLE public.droit (
-    droit_id integer NOT NULL,
-    nom character varying(20)[] NOT NULL
+    droit_id SERIAL NOT NULL,
+    nom character varying(20) NOT NULL
 );
 
 
@@ -223,9 +223,6 @@ ALTER TABLE public.droit OWNER TO postgres;
 -- Data for Name: Categorie; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Categorie" (categorie_id, nom, couleur) FROM stdin;
-\.
-
 
 --
 -- TOC entry 2911 (class 0 OID 16954)
@@ -233,8 +230,6 @@ COPY public."Categorie" (categorie_id, nom, couleur) FROM stdin;
 -- Data for Name: Limite; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Limite" (limite_id, date, valeur, utilisateur_id, recurence_id, sous_categorie_id) FROM stdin;
-\.
 
 
 --
@@ -243,18 +238,12 @@ COPY public."Limite" (limite_id, date, valeur, utilisateur_id, recurence_id, sou
 -- Data for Name: Modele_transaction; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Modele_transaction" (modele_transaction_id, valeur, date, note, utilisateur_id, sous_categorie_id, type_transaction_id, recurence_id) FROM stdin;
-\.
-
 
 --
 -- TOC entry 2900 (class 0 OID 16883)
 -- Dependencies: 197
 -- Data for Name: Notification; Type: TABLE DATA; Schema: public; Owner: postgres
 --
-
-COPY public."Notification" (notification_id, titre, message, utilisateur_id) FROM stdin;
-\.
 
 
 --
@@ -263,8 +252,7 @@ COPY public."Notification" (notification_id, titre, message, utilisateur_id) FRO
 -- Data for Name: Options; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Options" (options_id, rappel_email) FROM stdin;
-\.
+
 
 
 --
@@ -273,9 +261,6 @@ COPY public."Options" (options_id, rappel_email) FROM stdin;
 -- Data for Name: Pays; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Pays" (pays_id, nom) FROM stdin;
-\.
-
 
 --
 -- TOC entry 2905 (class 0 OID 16920)
@@ -283,18 +268,14 @@ COPY public."Pays" (pays_id, nom) FROM stdin;
 -- Data for Name: Recurence; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Recurence" (recurence_id, "Periodicite") FROM stdin;
-\.
-
 
 --
 -- TOC entry 2909 (class 0 OID 16944)
 -- Dependencies: 206
--- Data for Name: Sous-categorie; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: Sous_categorie; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Sous-categorie" ("sous-categorie_id", nom, categorie_id) FROM stdin;
-\.
+
 
 
 --
@@ -303,8 +284,7 @@ COPY public."Sous-categorie" ("sous-categorie_id", nom, categorie_id) FROM stdin
 -- Data for Name: Statut; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Statut" (statut_id, nom) FROM stdin;
-\.
+
 
 
 --
@@ -313,8 +293,7 @@ COPY public."Statut" (statut_id, nom) FROM stdin;
 -- Data for Name: Transaction; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Transaction" (transaction_id, valeur, date, modele_transaction_id) FROM stdin;
-\.
+
 
 
 --
@@ -323,8 +302,6 @@ COPY public."Transaction" (transaction_id, valeur, date, modele_transaction_id) 
 -- Data for Name: Type_transaction; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Type_transaction" (type_transaction_id, type) FROM stdin;
-\.
 
 
 --
@@ -333,8 +310,6 @@ COPY public."Type_transaction" (type_transaction_id, type) FROM stdin;
 -- Data for Name: Utilisateur; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Utilisateur" (utilisateur_id, prenom, nom, email, pseudo, mdp, genre, anniversaire, cree_a, droit_id, statut_id, pays_id, options_id) FROM stdin;
-\.
 
 
 --
@@ -342,10 +317,6 @@ COPY public."Utilisateur" (utilisateur_id, prenom, nom, email, pseudo, mdp, genr
 -- Dependencies: 198
 -- Data for Name: droit; Type: TABLE DATA; Schema: public; Owner: postgres
 --
-
-COPY public.droit (droit_id, nom) FROM stdin;
-\.
-
 
 --
 -- TOC entry 2757 (class 2606 OID 16943)
@@ -412,11 +383,11 @@ ALTER TABLE ONLY public."Recurence"
 
 --
 -- TOC entry 2759 (class 2606 OID 16948)
--- Name: Sous-categorie Sous-categorie_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: Sous_categorie Sous_categorie_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."Sous-categorie"
-    ADD CONSTRAINT "Sous-categorie_pkey" PRIMARY KEY ("sous-categorie_id");
+ALTER TABLE ONLY public."Sous_categorie"
+    ADD CONSTRAINT "Sous-categorie_pkey" PRIMARY KEY (sous_categorie_id);
 
 
 --
@@ -466,10 +437,10 @@ ALTER TABLE ONLY public.droit
 
 --
 -- TOC entry 2774 (class 2606 OID 17054)
--- Name: Sous-categorie categorie_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: sous_categorie categorie_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."Sous-categorie"
+ALTER TABLE ONLY public."Sous_categorie"
     ADD CONSTRAINT categorie_id FOREIGN KEY (categorie_id) REFERENCES public."Categorie"(categorie_id) ON UPDATE CASCADE ON DELETE SET DEFAULT;
 
 
@@ -533,7 +504,7 @@ ALTER TABLE ONLY public."Modele_transaction"
 --
 
 ALTER TABLE ONLY public."Limite"
-    ADD CONSTRAINT sous_categorie_id FOREIGN KEY (sous_categorie_id) REFERENCES public."Sous-categorie"("sous-categorie_id") ON UPDATE CASCADE ON DELETE CASCADE;
+    ADD CONSTRAINT sous_categorie_id FOREIGN KEY (sous_categorie_id) REFERENCES public."Sous_categorie"("sous_categorie_id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 --
@@ -542,7 +513,7 @@ ALTER TABLE ONLY public."Limite"
 --
 
 ALTER TABLE ONLY public."Modele_transaction"
-    ADD CONSTRAINT sous_categorie_id FOREIGN KEY (sous_categorie_id) REFERENCES public."Sous-categorie"("sous-categorie_id") ON UPDATE CASCADE ON DELETE SET DEFAULT;
+    ADD CONSTRAINT sous_categorie_id FOREIGN KEY (sous_categorie_id) REFERENCES public."Sous_categorie"("sous_categorie_id") ON UPDATE CASCADE ON DELETE SET DEFAULT;
 
 
 --
