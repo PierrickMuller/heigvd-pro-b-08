@@ -1,6 +1,6 @@
-.idea/
-.gradle/
-.g8/
-logs/
-build/
-target/
+./pro_play_java/.idea/
+./pro_play_java/.gradle/
+./pro_play_java/.g8/
+./pro_play_java/logs/
+./pro_play_java/build/
+./pro_play_java/target/
