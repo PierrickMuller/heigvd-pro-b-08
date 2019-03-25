@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:D:/documents/HeigVd/Annee2/Deuxieme_Semestre/PRO/Tests2Play/pro_play_java/conf/routes
-// @DATE:Fri Mar 22 15:39:34 CET 2019
+// @SOURCE:D:/TIC/HEIG/S4/PRO/PRO-2019-B-08/pro_play_java/conf/routes
+// @DATE:Mon Mar 25 12:52:56 CET 2019
 
 package router
 

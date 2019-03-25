@@ -33,7 +33,7 @@ object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 Seq[Any](format.raw/*1.4*/("""
 
 """),_display_(/*3.2*/main("Welcome to Play")/*3.25*/ {_display_(Seq[Any](format.raw/*3.27*/("""
-  """),format.raw/*4.3*/("""<h1>Welcome to Play!</h1>
+  """),format.raw/*4.3*/("""<h1>Welcome to tamer!</h1>
 """)))}),format.raw/*5.2*/("""
 """))
       }
@@ -51,10 +51,10 @@ Seq[Any](format.raw/*1.4*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Mar 22 15:39:35 CET 2019
-                  SOURCE: D:/documents/HeigVd/Annee2/Deuxieme_Semestre/PRO/Tests2Play/pro_play_java/app/views/index.scala.html
-                  HASH: e7b67f9143e77fd41846670f700f7278d5705eda
-                  MATRIX: 941->1|1037->3|1067->8|1098->31|1137->33|1167->37|1224->65
+                  DATE: Mon Mar 25 12:54:06 CET 2019
+                  SOURCE: D:/TIC/HEIG/S4/PRO/PRO-2019-B-08/pro_play_java/app/views/index.scala.html
+                  HASH: 49ebac307d4bed5182f3e2c2fed1d1c01998f342
+                  MATRIX: 941->1|1037->3|1067->8|1098->31|1137->33|1167->37|1225->66
                   LINES: 28->1|33->1|35->3|35->3|35->3|36->4|37->5
                   -- GENERATED --
               */
