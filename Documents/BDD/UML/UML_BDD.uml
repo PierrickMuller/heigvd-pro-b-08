@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>55734d7e-00b1-42ef-94e2-e24b9a955768</OriginalElement>
+  <nodes>
+    <node x="620.0" y="11.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Options</node>
+    <node x="193.125" y="788.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Transaction</node>
+    <node x="928.75" y="576.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Notification</node>
+    <node x="472.5" y="554.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Limite</node>
+    <node x="970.0" y="11.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Statut</node>
+    <node x="10.0" y="267.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Type_transaction</node>
+    <node x="1131.0" y="11.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Pays</node>
+    <node x="193.125" y="532.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Modele_transaction</node>
+    <node x="810.0" y="11.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Droit</node>
+    <node x="231.0" y="267.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Recurence</node>
+    <node x="440.0" y="0.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Categorie</node>
+    <node x="425.0" y="256.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Sous_categorie</node>
+    <node x="877.75" y="146.0">55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Utilisateur</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Utilisateur" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Statut">
+      <point x="20.625" y="-158.0" />
+      <point x="980.875" y="116.0" />
+      <point x="1040.5" y="116.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Modele_transaction" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Sous_categorie">
+      <point x="27.125" y="-103.0" />
+      <point x="328.75" y="492.0" />
+      <point x="472.5" y="492.0" />
+      <point x="-47.5" y="48.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Utilisateur" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Droit">
+      <point x="-20.625" y="-158.0" />
+      <point x="939.625" y="116.0" />
+      <point x="880.0" y="116.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Limite" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Recurence">
+      <point x="-63.33333333333337" y="-81.0" />
+      <point x="504.16666666666663" y="482.0" />
+      <point x="361.5" y="482.0" />
+      <point x="43.5" y="37.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Modele_transaction" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Utilisateur">
+      <point x="81.375" y="-103.0" />
+      <point x="383.0" y="502.0" />
+      <point x="905.25" y="502.0" />
+      <point x="-55.0" y="158.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Sous_categorie" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Categorie">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Utilisateur" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Pays">
+      <point x="61.875" y="-158.0" />
+      <point x="1022.125" y="126.0" />
+      <point x="1201.0" y="126.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Transaction" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Modele_transaction">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="103.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Utilisateur" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Options">
+      <point x="-61.875" y="-158.0" />
+      <point x="898.375" y="126.0" />
+      <point x="705.0" y="126.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Limite" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Sous_categorie">
+      <point x="0.0" y="-81.0" />
+      <point x="47.5" y="48.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Notification" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Utilisateur">
+      <point x="0.0" y="-59.0" />
+      <point x="55.0" y="158.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Modele_transaction" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Type_transaction">
+      <point x="-81.375" y="-103.0" />
+      <point x="220.25" y="512.0" />
+      <point x="110.5" y="512.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Modele_transaction" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Recurence">
+      <point x="-27.125" y="-103.0" />
+      <point x="-43.5" y="37.0" />
+    </edge>
+    <edge source="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Limite" target="55734d7e-00b1-42ef-94e2-e24b9a955768.TABLE:BD_Budget.public.Utilisateur">
+      <point x="63.33333333333337" y="-81.0" />
+      <point x="630.8333333333334" y="512.0" />
+      <point x="960.25" y="512.0" />
+      <point x="0.0" y="158.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4568034557235421" x="635.4999999999999" y="453.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+

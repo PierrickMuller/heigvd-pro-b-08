@@ -1,0 +1,35 @@
+Accès par SSH
+
+10.192.72.67
+login: heiguser
+password: m6jBrN!Bjy9Qj8#v
+
+
+Le compte heiguser est un sudoer. Tu peut donc faire des sudo pour faire tes installation.
+
+
+
+sudo -i -u postgres ( acéder au compte postgres ou user )
+psql 				(invite Postgres cmd)
+\q
+ !!!!!!!!!!!!!!!!!!!!!! cella  -->
+sudo -u postgres psql  (invite Postgres sans changer de compte)
+
+user (superuser)
+m6jBrN!Bjy9Qj8#v
+tous default
+
+user=# \conninfo (info database)
+
+
+// Transfert de fichier 
+ scp ./BD_creation_Backup_PgAdmin_database_V2.backup postgres@10.192.72.67:./backups/
+ m6jBrN!Bjy9Qj8#v
+ 
+ // Restore depuis un backup
+pg_restore -C -d BD_Budget BD_creation_Backup_PgAdmin_database.backup
+
+
+// PSQL----------------------
+\list 			(listes les bases de donnée)
+\c <name_BD> 	(connect a la base de donnée)
