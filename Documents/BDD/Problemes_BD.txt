@@ -10,6 +10,8 @@ Transaction -> modele_transaction (delete no action)
 
 Sous_categore -> catégore (delete SET default) ??????
 
+droit_id auto
+
 UNIQUE ??
 
 
