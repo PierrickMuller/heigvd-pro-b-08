@@ -9,16 +9,165 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        @* Here's where we render the page title `String`. *@
+    	<meta charset="utf-8">
+		
+		<!-- C'est censé être utile pour le site sur téléphone -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+		@* Here's where we render the page title `String`. *@
         <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        
+        	
+		<!-- bootstrap CSS file pour bootstrap 4 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	
+		<!-- Dernière version de jquery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		
+		<!-- Dernière version de popper js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+		<!-- Dernière version de bootstrap js -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	
+		<!-- Permet d'utiliser des icônes des médias sociaux sans doute useless, mais on laisse pq on sait jamais -->
+		<!--- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> --->
+	
+        
+        <!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- Carousel includes (En vrai ça tue le carousel, laissez ça commenté -->
+		<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+		<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> -->
+		<!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+	
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/style.css")">
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
     </head>
     <body>
+    <!-- Navigation -->
+	<!-- Le md dit en gros que ça sera visible que sur les petits écrans (voir les comm dans style.css) -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<!-- container-fluid permet de prendre 100% de la page -->
+		<div class ="container-fluid"> 
+			<!-- le href permet de rendre le truc clickable -->
+			<a class="navbar-brand" href="#">
+				<!-- Dans le truc clickable on met une image, l'image sera donc clickable -->
+				<img src="@routes.Assets.versioned("images/logo_projet.png")"></img>
+			</a>
+		
+		
+		
+			<!-- Censé être le bouton stylé sur les téléphones pour les menu -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Team</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Connect</a>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+	
+	</nav>
+
+	<div class="text-center">
+	@content
+			<button type="button" class="btn btn-basic">Add expense</button>
+			<button type="button" class="btn btn-basic">Add income</button>
+
+	</div>			
+    
         @* And here's where we render the `Html` object containing
          * the page content. *@
-        @content
+     
+        
+	
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
 
-        <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+	
+	
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+         <div class="container">
+      <div id="carouselContent" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active text-center p-4">
+             <p>You can have a coach's help at any moment</p>
+          </div>
+          <div class="carousel-item text-center p-4">
+            
+            <p>Add a categorie at any moment to customize the manager</p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+        </div>
+
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+		
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.facebook.com/Compact-Budget-2397370796940679/?modal=admin_todo_tour" class="fa fa-facebook"></a> <a href="https://twitter.com/BudgetCompact" class="fa fa-twitter"></a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+      
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    
+
+  </footer>
+  <!-- Footer -->
+
+       <!-- <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>-->
     </body>
 </html>
