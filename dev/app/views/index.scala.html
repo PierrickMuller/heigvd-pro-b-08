@@ -1,5 +1,16 @@
-@()
+@(titre: String)
 
-@main("Welcome to Play") {
-  <h1>Welcome to Play!</h1>
+@main(titre: String) {
+  <h1>Welcome @titre</h1>
+    <p> bonjour les amis , </p>
+
+  <a href="http://localhost:9000/test" class="button">Go to test</a>
+  <br>
+  <a href="http://localhost:9000/profil" class="button">Go to Profil</a>
+  <br>
+  <a href="http://localhost:9000/categorie" class="button">Go to Categorie</a>
+  <br>
+  <a href="http://localhost:9000/sousCategorie" class="button">Go to sous categorie</a>
+  <br>
+
 }
