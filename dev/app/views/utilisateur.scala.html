@@ -1,0 +1,26 @@
+@*
+ * This template is called from the `index` template. This template
+ * handles the rendering of the page header and body tags. It takes
+ * two arguments, a `String` for the title of the page and an `Html`
+ * object to insert into the body of the page.
+*@
+@import controllers.BDDpackage.Utilisateur
+
+@(user: Utilisateur)
+
+@main("Profil") {
+    <h1>Welcome to your profil</h1>
+
+    <h2>@user.prenom @user.nom</h2>
+
+    <br>
+    <p>Pseudo: @user.pseudo <br>Email: @user.email <br>Genre: @user.genre </p>
+    <p>Anniv: @user.anniversaire <br>cree a: @user.cree_a </p>
+    <p>Statut: @user.statut <br>Pays: @user.pays </p>
+    <br>
+    <p><b>Paramètres:</b><br> rappel via email: @user.options</p>
+
+    <a href="http://localhost:9000" class="button">Go to home</a>
+    <br>
+
+}
